@@ -34,10 +34,9 @@ function PokemonList() {
       <p>
         Mostrando {listaFiltrada.length} Pokémon(s)
       </p>
-      { listaFiltrada.length === 0 &&(
-        <p>Nenhum Pokémon encontrado</p>
-      )}
-      { listaFiltrada.map((pokemon) => (
+      { listaFiltrada.length === 0 ?
+        <p>Nenhum Pokémon encontrado</p> :
+       listaFiltrada.map((pokemon) => (
         <PokemonCard
           key={pokemon.id}
           id={pokemon.id}
