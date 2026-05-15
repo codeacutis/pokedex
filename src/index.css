@@ -89,7 +89,7 @@ label[for="busca"],
   width: 100%;
   max-width: 400px;
   padding: 12px 20px;
-  margin-bottom: 20px;
+  margin-bottom: 3px;
   border: 3px solid #2a75bb;
   border-radius: 25px;
   font-size: 1rem;
@@ -106,6 +106,27 @@ label[for="busca"] {
   font-weight: bold;
   color: #2a75bb;
   margin-bottom: -10px;
+}
+
+.mensagem-info,
+.mensagem-erro {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 16px;
+  font-weight: bold;
+}
+
+/* Caixa de erro */
+
+.mensagem-erro {
+  background-color: #fff1f1;
+  border: 3px solid  #2a75bb;
+  color:rgba(4, 68, 128, 0.9);
+  box-shadow: 0 4px 10px rgba(157, 184, 242, 0.2);
 }
 /* CARD */
 

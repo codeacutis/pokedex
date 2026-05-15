@@ -31,11 +31,13 @@ function PokemonList() {
         onChange={(e) => setFiltro(e.target.value)}
         placeholder="Ex.: char"
       />
-      <p>
+      <p className="mensagem-info">
         Mostrando {listaFiltrada.length} Pokémon(s)
       </p>
       { listaFiltrada.length === 0 ?
-        <p>Nenhum Pokémon encontrado</p> :
+        <p className="mensagem-erro">
+          Nenhum Pokémon encontrado
+        </p> :
        listaFiltrada.map((pokemon) => (
         <PokemonCard
           key={pokemon.id}
